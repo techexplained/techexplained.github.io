@@ -146,6 +146,7 @@
 }
 
 .carousel-control-next,
+.navbar-toggler-icon
 .carousel-indicators,
 .carousel-control-prev {
     filter: invert(100%);
