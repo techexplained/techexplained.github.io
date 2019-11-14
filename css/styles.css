@@ -1,0 +1,152 @@
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: 0;
+  border-radius: 0;
+  margin-bottom: 0;
+  font-size: 12px;
+  background-color: #046cca;
+  letter-spacing: 5px;
+}
+
+.navbar-nav li a:hover {
+  color: #fff;
+}
+
+.content-class {
+  height: 100%;
+}
+
+.educationCarousel {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  text-align: justify;
+}
+
+.educationCarouselContentClass {
+  text-align: center;
+}
+
+.carousel-control {
+  color: #046cca;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  text-align: center;
+  position: relative;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #046cca;
+}
+
+.footer p {
+  /* margin-top: 25px; */
+  font-size: 18px;
+  color: #fff;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.section-row {
+  margin-top: 75px;
+  margin-bottom: 75px;
+  height: 190px;
+}
+
+.section-col {
+  text-align: center;
+  margin-right: 75px;
+  background-color: #046cca;
+  color: #fff;
+  padding-top: 4rem;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.nav-link {
+  color: #ffffff;
+    font-size: 14px;
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+.sidebar-class {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.sidebar {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  /* Behind the navbar */
+  /* padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+  font-weight: 500;
+  color: #333;
+}
+
+.sidebar .nav-link .feather {
+  margin-right: 4px;
+  color: #999;
+}
+
+.sidebar .nav-link.active {
+  color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+  color: inherit;
+}
+
+.sidebar-heading {
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+[role="main"] {
+  padding-top: 48px;
+  /* Space for fixed navbar */
+}
+
+.carousel-control-next,
+.carousel-indicators,
+.carousel-control-prev {
+    filter: invert(100%);
+}
