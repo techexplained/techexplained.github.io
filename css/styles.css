@@ -1,3 +1,7 @@
+body {
+  font-family: Akzidenz,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
 .container-fluid {
   padding-top: 70px;
   padding-bottom: 70px;
@@ -150,4 +154,8 @@
 .carousel-indicators,
 .carousel-control-prev {
     filter: invert(100%);
+}
+
+.context-text-class {
+  padding-top: 0;
 }

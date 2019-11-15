@@ -9,20 +9,20 @@
   <link rel="stylesheet" href="../../css/styles.css">
 
   <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">TECH EXPLAINED</a>
+    <a class="navbar-brand" href="../../index.html">TECH EXPLAINED</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="../../index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
+          <a class="nav-link" href="../../about.html">About Us</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contactus.html">Contact Us</a>
+          <a class="nav-link" href="../../contactus.html">Contact Us</a>
         </li>
       </ul>
     </div>
@@ -42,11 +42,22 @@
                 Python Language <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file"></span>
-                Python basics
-              </a>
+            <li class=" nav-item active">
+              <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class=" nav-link dropdown-toggle">Python Basics</a>
+              <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                  <a class=" nav-link" href="#numbers&floats" style="text-indent: 15px;">Numbers and Floats</a>
+                </li>
+                <li>
+                  <a class=" nav-link" href="#basicarithmetic" style="text-indent: 15px;">Basic arithmetic</a>
+                </li>
+                <li>
+                  <a class=" nav-link" href="#comparisionoperator" style="text-indent: 15px;">Comparision Operators</a>
+                </li>
+                <li>
+                  <a class=" nav-link" href="#variables" style="text-indent: 15px;">Variables</a>
+                </li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">
@@ -78,23 +89,175 @@
 
       <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
         <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1>Python Numbers</h1>
+          <h1>Python Basics</h1>
         </div>
-        <div class="container">
+        <div class="container-fluid text-wrap context-text-class">
           <!-- <h1>Python Numbers </h1> -->
-                  <pre> Python numbers are generally divided in two forms. 1. Integers and 2. Floats
+          <h2 id="numbers&floats">1. Numbers and Floats</h2>
+          <p> Python numbers are generally divided in two forms. </p>
+          <ul>
+            <li>Integers</li>
+            <li>floats</li>
+          </ul>
 
-      Integers are just whole numbers, positive or negative. For example: 1 and -1 are examples of integers.
+          <p> Integers are just whole numbers, positive or negative. For example: 1 and -1 are examples of integers. <br>
+            Floating point numbers in Python are notable because they have a decimal point in them.
+            For example 2.0 and -2.1 are examples of floating point numbers. <br>
+          </p>
 
-          Floating point numbers in Python are notable because they have a decimal point in them, or use an exponential (e) to define the number. For example 2.0 and -2.1 are examples of floating point numbers. 4E2 (4 times 10 to the power of 2) is
-          also an example of a floating point number in Python.
-        </p> </pre>
+          <h2 id="basicarithmetic">2. Basic arithmetic</h2> <br>
 
+          <table class="table table-hover " style="text-align: left;">
+            <thead class="thead-dark">
+              <tr>
+                <!-- <th class= "w-auto" scope="col">#</th> -->
+                <th scope="col">Artihmetic Operation</th>
+                <th scope="col">Artihmetic Operator</th>
+                <th scope="col">Example</th>
+                <th scope="col">Result</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Addition</th>
+                <td> + </td>
+                <td>3 + 4</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <th scope="row">Subtraction</th>
+                <td> + </td>
+                <td>3 - 4</td>
+                <td>-1</td>
+              </tr>
+              <tr>
+                <th scope="row">Multiplication</th>
+                <td> + </td>
+                <td>3 * 4</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <th scope="row">Division</th>
+                <td> / </td>
+                <td> 4 / 2</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Floor Division</th>
+                <td> // </td>
+                <td> 4 / 3</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th scope="row">Powers</th>
+                <td> ** </td>
+                <td> 4 ** 2</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <th scope="row">Square Root</th>
+                <td> ** </td>
+                <td> 4 ** 0.5</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th scope="row">Order of Operations</th>
+                <td> </td>
+                <td> 2 + 10 * 10 + 3</td>
+                <td>105</td>
+              </tr>
+              <tr>
+                <th scope="row">Parentheses to specify orders</th>
+                <td> </td>
+                <td> (2+10) * (10+3)</td>
+                <td>156</td>
+              </tr>
+              <tr>
+                <th scope="row">Modulo</th>
+                <td> % </td>
+                <td> 7 % 4 </td>
+                <td>3</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2 id="comparisionoperator">3. Comparision Operators</h2> <br>
+          <table class="table table-hover " style="text-align: left;">
+            <thead class="thead-dark">
+              <tr>
+                <th scope="col">Operator</th>
+                <th scope="col">Description</th>
+                <th scope="col">Example</th>
+              </tr>
+
+            </thead>
+            <tbody>
+              <tr>
+                <td> == </td>
+                <td> If the values of two operands are equal, then the condition becomes true. </td>
+                <td> (a == b) is not true.</td>
+              </tr>
+              <tr>
+                <td> != </td>
+                <td> If values of two operands are not equal, then condition becomes true. </td>
+                <td> (a != b) is true </td>
+              </tr>
+              <tr>
+                <td> > </td>
+                <td> If the value of left operand is greater than the value of right operand, then condition becomes true. </td>
+                <td> (a > b) is true </td>
+              </tr>
+              <tr>
+                <td>
+                  < </td> <td> If the value of left operand is less than the value of right operand, then condition becomes true.
+                </td>
+                <td> (a < b) is true </td> </tr> <tr>
+                <td> >= </td>
+                <td> If the value of left operand is greater than or equal to the value of right operand, then condition becomes true. </td>
+                <td> (a >= b) is true </td>
+              </tr>
+              <tr>
+                <td>
+                  <= </td> <td> If the value of left operand is less than or equal to the value of right operand, then condition becomes true.
+                </td>
+                <td> (a <= b) is true </td> </tr> </tbody> </table> <h2 id="variables">4. Variables</h2>
+                    <h3> Rules for variable names </h3> <br>
+                    <ul>
+                      <li>names can not start with a number</li>
+                      <li> names can not contain spaces, use _ intead</li>
+                      <li> names can not contain any of these symbols:</li>
+                      <li> Python built-in keywords like list and str are not allowed </li>
+                    </ul>
+                    <br>
+                    <table class="table table-hover " style="text-align: center;">
+                      <thead class="thead-dark">
+                        <tr>
+                          <th scope="col" colspan="4">Variable Type</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td> int (for integer) </td>
+                          <td> float </td>
+                          <td> str (for string)</td>
+                          <td> list </td>
+                        </tr>
+                        <tr>
+                          <td> tuple </td>
+                          <td> dict (for dictionary)</td>
+                          <td> set </td>
+                          <td> bool (for Boolean True/False) </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h3> Variable assignment and type </h3> <br>
+                    <img class="img-fluid" src="images/variable_assignment.png" alt="variable_assignment">
         </div>
       </main>
     </div>
   </div>
-  <div class="footer footer-padding">
+  <div class=" footer footer-padding">
     <footer>
       <p>Made with ❤️ from the tech explained team.</p>
     </footer>
