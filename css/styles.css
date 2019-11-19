@@ -7,9 +7,18 @@ a:hover, a:active, a:focus {
   color: #ffffff !important;
 }
 
+.text-indent {
+  text-indent: 15px;
+}
+
 .navbar-brand {
   color: #ffffff;
   pointer-events: none;
+}
+
+.navbar-topheader {
+  text-align: right;
+  padding-right: 15px;
 }
 
 .nav-link {
@@ -51,6 +60,11 @@ a:hover, a:active, a:focus {
   color: #046cca;
 }
 
+.sidebar-menu-text {
+  font-weight: bold;
+  font-size: 24px;
+}
+
 .sidebar {
   position: relative;
   box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
@@ -70,21 +84,9 @@ a:hover, a:active, a:focus {
 
 .sidebar-row-tablet {
   position: absolute;
-  /* position: relative;
-  height: 100%;
-  width: 60%;
-  overflow: hidden; */
   z-index: 2;
   opacity: 0.8;
 }
-
-/* .sidebar-row-ul-tablet {
-  position: absolute;
-  /* position: relative;
-  height: 100%;
-  width: 60%;
-  overflow: hidden; */
-
 
 .sidebar .nav-link {
   font-weight: 500;
@@ -95,6 +97,11 @@ a:hover, a:active, a:focus {
 .sidebar .nav-link.active {
   color: #ffffff;
   background-color: #007bff;
+}
+
+.contentPart {
+  padding-top:30px;
+  /* padding-bottom:30px */
 }
 
 .footer {
@@ -112,90 +119,3 @@ a:hover, a:active, a:focus {
   text-align: center;
   padding-top: 15px;
 }
-
-/* Can be deleteted */
-/* .section-row {
-  margin-top: 75px;
-  margin-bottom: 75px;
-  height: 190px;
-}
-
-.feather {
-  width: 16px;
-  height: 16px;
-  vertical-align: text-bottom;
-}
-
-
-#content-button {
-  width: 100%;
-  margin: 0 auto;
-  position: fixed;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  z-index: 999;
-}
-
-[role="main"] {
-  padding-top: 48px;
-  /* Space for fixed navbar
-}
-
-.button-center {
-  margin: auto;
-  width: 50%;
-  padding: 10px;
-}
-
-.sidebar .nav-link .feather {
-  margin-right: 4px;
-  color: #999;
-}
-
-
-.section-col {
-  text-align: center;
-  margin-right: 75px;
-  background-color: #046cca;
-  color: #fff;
-  padding-top: 4rem;
-} */
-/* .navbar-topheader li a:hover {
-  color: black;
-} */
-/*
-.sidebar-heading {
-  font-size: .75rem;
-  text-transform: uppercase;
-} */
-/*
-.sidebar-class {
-  padding-top: 0;
-  padding-bottom: 0;
-} */
-/*
-.sidebar-sticky {
-  position: sticky;
-  bottom: var(--footer-height);
-  min-height: calc(100vh - var(--footer-height));
-  box-sizing: border-box;
-  overflow-x: hidden;
-  overflow-y: auto;
-} */
-/*
-.context-text-class {
-  padding-top: 0;
-} */
-/* .container-fluid {
-  padding-top: 70px;
-  padding-bottom: 70px;
-} */
-/*
-.content-class {
-  height: 100%;
-} */
-/*
- * Sidebar
- */
