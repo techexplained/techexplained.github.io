@@ -25,7 +25,8 @@ var header = document.getElementById("contentTopPart");
 var sticky = header.offsetTop;
 
 window.onscroll = function() {
-  if (window.pageYOffset > 70) {
+  // console.log($("header").height());
+  if (window.pageYOffset > $("header").height()) {
     header.classList.add("sticky");
   } else {
     header.classList.remove("sticky");
@@ -35,12 +36,12 @@ window.onscroll = function() {
 window.onresize = getResolution;
 
 
-
 function getResolution() {
-  console.log(window.innerWidth);
+  // console.log(window.innerWidth);
   if (window.innerWidth < 1200) {
-    console.log("here");
     document.getElementById("sidebar-row").classList.add("sidebar-row-tablet");
+    document.getElementById("sidebar-row").style.height = $("#contentBody").height()+"px";
+    console.log($("#contentBody").height());
     // document.getElementById("sidebar-row-ul").classList.add("sidebar-row-ul-tablet");
     // document.getElementById("sidebar-row").classList.remove("bg-light");
   } else {
