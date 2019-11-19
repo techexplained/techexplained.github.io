@@ -40,7 +40,8 @@ function getResolution() {
   // console.log(window.innerWidth);
   if (window.innerWidth < 1200) {
     document.getElementById("sidebar-row").classList.add("sidebar-row-tablet");
-    document.getElementById("sidebar-row").style.height = $("#contentBody").height()+"px";
+    var totalHeight = $(".contentMiddlePart").height() + $(".contentTopPart").height();
+    document.getElementById("sidebar-row").style.height = totalHeight +"px";
     console.log($("#contentBody").height());
     // document.getElementById("sidebar-row-ul").classList.add("sidebar-row-ul-tablet");
     // document.getElementById("sidebar-row").classList.remove("bg-light");
