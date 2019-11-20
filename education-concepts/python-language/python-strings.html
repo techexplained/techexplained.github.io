@@ -61,6 +61,12 @@
             </li>
           </ul>
         </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-strings.html">Python Strings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-lists.html">Python Lists</a>
+        </li>
       </ul>
     </div>
 
@@ -77,172 +83,85 @@
       <div class="container-fluid contentMiddlePart">
         <div class="row">
           <div class="col-xl-12">
-            <div id="numbersrs" class="container-fluid contentPart">
+            <div id="Strings" class="container-fluid contentPart">
 
-              <h2> Creating strings</h2>
-              <p> Python numbers are generally divided in two forms. </p>
-              <ul>
-                <li>Integers</li>
-                <li>floats</li>
-              </ul>
-
-              <p> Integers are just whole numbers, positive or negative. For example: 1 and -1 are examples of integers. <br>
-                Floating point numbers in Python are notable because they have a decimal point in them.
-                For example 2.0 and -2.1 are examples of floating point numbers. <br>
+              <h2> Strings</h2>
+              <p> Strings in Python are actually a sequence, which basically means Python keeps track of every element in the string as a sequence. 
+                For example, Python understands the string "hello' to be a sequence of letters in a specific order.
               </p>
-
-            </div>
-
-            <div id="basicarithmetic" class="container-fluid contentPart">
-              <h2>2. Basic arithmetic</h2> <br>
 
               <table class="table table-hover " style="text-align: left;">
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Artihmetic Operation</th>
-                    <th scope="col">Artihmetic Operator</th>
-                    <th scope="col">Example</th>
-                    <th scope="col">Result</th>
+                    <th scope="col">String type</th>
+                    <th scope="col">Examples</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <th scope="row">Addition</th>
-                    <td> + </td>
-                    <td>3 + 4</td>
-                    <td>7</td>
+                    <th scope="row">Single word</th>
+                    <td> str = “Hello” </td>
                   </tr>
                   <tr>
-                    <th scope="row">Subtraction</th>
-                    <td> + </td>
-                    <td>3 - 4</td>
-                    <td>-1</td>
+                    <th scope="row">Multiple words</th>
+                    <td> str = “Hello world!” </td>
                   </tr>
                   <tr>
-                    <th scope="row">Multiplication</th>
-                    <td> + </td>
-                    <td>3 * 4</td>
-                    <td>12</td>
+                    <th scope="row">Words with quotes</th>
+                    <td> str = ‘Hello world with “quotes”’ </td>
                   </tr>
                   <tr>
-                    <th scope="row">Division</th>
-                    <td> / </td>
-                    <td> 4 / 2</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Floor Division</th>
-                    <td> // </td>
-                    <td> 4 / 3</td>
-                    <td>1</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Powers</th>
-                    <td> ** </td>
-                    <td> 4 ** 2</td>
-                    <td>16</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Square Root</th>
-                    <td> ** </td>
-                    <td> 4 ** 0.5</td>
-                    <td>2</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Order of Operations</th>
-                    <td> </td>
-                    <td> 2 + 10 * 10 + 3</td>
-                    <td>105</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Parentheses to specify orders</th>
-                    <td> </td>
-                    <td> (2+10) * (10+3)</td>
-                    <td>156</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">Modulo</th>
-                    <td> % </td>
-                    <td> 7 % 4 </td>
-                    <td>3</td>
+                    <th scope="row">Print words</th>
+                    <td> print(“Hello World!”) </td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-            <div id="section3" class="container-fluid contentPart">
-              <h2>3. Comparision Operators</h2> <br>
+            <div id="string-functions" class="container-fluid contentPart">
+              <h2>String Functions</h2> <br>
+
               <table class="table table-hover " style="text-align: left;">
                 <thead class="thead-dark">
                   <tr>
-                    <th scope="col">Operator</th>
-                    <th scope="col">Description</th>
-                    <th scope="col">Example</th>
+                    <th scope="col">Function</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Output</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td> == </td>
-                    <td> If the values of two operands are equal, then the condition becomes true. </td>
-                    <td> (a == b) is not true.</td>
+                    <th scope="row">String Length</th>
+                    <td> len('Hello World')</td>
+                    <td> 11 </td>
                   </tr>
                   <tr>
-                    <td> != </td>
-                    <td> If values of two operands are not equal, then condition becomes true. </td>
-                    <td> (a != b) is true </td>
+                    <th scope="row">String Index</th>
+                    <td> str = "Hello world!" <br> str[2] </td>
+                    <td>"l"</td>
                   </tr>
                   <tr>
-                    <td> > </td>
-                    <td> If the value of left operand is greater than the value of right operand, then condition becomes true. </td>
-                    <td> (a > b) is true </td>
-                  </tr>
-                  <tr>
-                    <td>
-                      < </td> <td> If the value of left operand is less than the value of right operand, then condition becomes true.
+                    <th scope="row">String Slicing</th>
+                    <td> str = "Hello world!" <br> str[2:5:2] </td>
+                    <td> "lo" <p> <i>Start at positon 2 and upto <br> but not including position 5 with step size of 2. </i></p>
                     </td>
-                    <td> (a < b) is true </td> </tr> <tr>
-                    <td> >= </td>
-                    <td> If the value of left operand is greater than or equal to the value of right operand, then condition becomes true. </td>
-                    <td> (a >= b) is true </td>
                   </tr>
                   <tr>
-                    <td>
-                      <= </td> <td> If the value of left operand is less than or equal to the value of right operand, then condition becomes true.
-                    </td>
-                    <td> (a <= b) is true </td> </tr> </tbody> </table> </div> <div id="variables" class="container-fluid contentPart">
-                        <h2>4. Variables</h2>
-                        <h3> Rules for variable names </h3> <br>
-                        <ul>
-                          <li>names can not start with a number</li>
-                          <li> names can not contain spaces, use _ intead</li>
-                          <li> names can not contain any of these symbols:</li>
-                          <li> Python built-in keywords like list and str are not allowed </li>
-                        </ul>
-                        <br>
-                        <table class="table table-hover " style="text-align: center;">
-                          <thead class="thead-dark">
-                            <tr>
-                              <th scope="col" colspan="4">Variable Type</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td> int (for integer) </td>
-                              <td> float </td>
-                              <td> str (for string)</td>
-                              <td> list </td>
-                            </tr>
-                            <tr>
-                              <td> tuple </td>
-                              <td> dict (for dictionary)</td>
-                              <td> set </td>
-                              <td> bool (for Boolean True/False) </td>
-                            </tr>
-                          </tbody>
-                        </table>
-
-                        <h3> Variable assignment and type </h3> <br>
-                        <img class="img-fluid" src="images/variable_assignment.png" alt="variable_assignment">
+                    <th scope="row">String Reverse</th>
+                    <td> str = "Hello world!" <br> str[::-1] </td>
+                    <td> "!dlroW olleH" </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">String Concatenate</th>
+                    <td> str1 = "Hello" <br> str2 = "World!"<br> str3 = str1 + " " + str2 </td>
+                    <td> "Hello World" </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">String Split</th>
+                    <td> str = "Hello world!" <br> str.split() </td>
+                    <td> ['Hello', 'World!'] </td>
+                </tbody>
+              </table>
             </div>
           </div>
         </div>
@@ -252,8 +171,8 @@
         <div class="row">
           <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
             <div class="container-fluid mx-auto" style="width: 400px;">
-              <button type="button" class="btn btn-primary btn-lg" style="width: 140px; margin-right: 10px;">Previous</button>
-              <button type="button" class="btn btn-primary btn-lg" style="width: 140px;"> <a href="#">Next</a></button>
+              <button type="button" class="btn btn-primary btn-lg" style="width: 140px; margin-right: 10px;"><a href="python.html">Previous</a></button>
+              <button type="button" class="btn btn-primary btn-lg" style="width: 140px;"> <a href="python-lists.html">Next</a></button>
             </div>
           </div>
         </div>

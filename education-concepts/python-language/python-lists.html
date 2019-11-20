@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Tech Explained</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand noHover" href="../../index.html">TECH EXPLAINED</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto navbar-topheader">
+          <li class="nav-item active">
+            <a class="nav-link" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../../contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="row">
+
+    <div class="navbar navbar-expand-sm bg-light col-md-2 col-sm-3 sidebar" id="sidebar-row">
+      <ul class="navbar-nav flex-column ml-xl-3 sidebar-ul" id="sidebar-row-ul">
+        <li class="nav-item">
+          <div class="sidebar-menu-text">
+            Menu
+            <button type="button" id="closeButton" class="close pull-right">
+              <span>&times;</span>
+            </button>
+          </div>
+        </li>
+        <li class=" nav-item">
+          <a href="#homeSubmenu" data-toggle="collapse" class="nav-link dropdown-toggle">Python Basics</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a class="text-indent nav-link menuitem-nav-link active" href="#numbersrs&floats">Numbers and Floats</a>
+            </li>
+            <li>
+              <a class="text-indent nav-link menuitem-nav-link" href="#basicarithmetic">Basic arithmetic</a>
+            </li>
+            <li>
+              <a class="text-indent nav-link menuitem-nav-link" href="#comparisionoperator">Comparision Operators</a>
+            </li>
+            <li>
+              <a class="text-indent nav-link menuitem-nav-link" href="#variables">Variables</a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-strings.html">Python Strings</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-lists.html">Python Lists</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="col-md-10 col-sm-9" id="contentBody">
+
+      <div class="container-fluid contentTopPart">
+        <div class="row" id="contentTopPart">
+          <div class="col-xl-12 border-bottom bg-light contentPart">
+            <button class="btn btn-primary" type="button"> Menu </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid contentMiddlePart">
+        <div class="row">
+          <div class="col-xl-12">
+            <div id="Strings" class="container-fluid contentPart">
+
+              <h2> Lists</h2>
+              <p> Lists in python can be considered as a collection of items stored together.
+                Lists are constructed with brackets [] and commas separating every element in the list. <br>
+              </p>
+
+              <div id="list-functions" class="container-fluid contentPart">
+                <h2>List basics & functions</h2> <br>
+
+                <table class="table table-hover " style="text-align: left;">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Basics & functions</th>
+                      <th scope="col">Code</th>
+                      <th scope="col">Output</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Creating a list</th>
+                      <td> my_list = ['Hello',1,2.’world’,3] </td>
+                      <td> ['Hello',1,2.’world’,3] </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">List Length</th>
+                      <td> my_list = ['Hello',1,2.’world’,3] <br> len(my_list) </td>
+                      <td>4</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Length Slicing</th>
+                      <td> my_list = ['Hello',1,2.’world’,3] <br> my_list[0:3:2] </td>
+                      <td> [‘hello’,2] <p> <i> Start at positon 0 <br> and upto but not including position 3 with step size of 2. </i></p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">List Append</th>
+                      <td> my_list = ['Hello',1,2.’world’,3] <br> my_list.append(4) </td>
+                      <td> ['Hello',1,2.’world’,3, 4] </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">List Pop</th>
+                      <td> my_list = ['Hello',1,2.’world’,3] <br> Ex1: my_list.pop(1) <br> Ex2: my_list.pop() </td>
+                      <td> <br> Ex1: ['Hello',2.’world’,3, 4] <br> Ex2: ['Hello',1,2.’world’,3] </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">List Reverse**</th>
+                      <td> my_list = ['Hello',1,2.’world’,3] <br> my_list.reverse() </td>
+                      <td> [3, ‘world’, 2, 1, ‘Hello’] </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">List Sort**</th>
+                      <td> my_list = [1, 3, 4, 2] <br> my_list.sort() </td>
+                      <td> [1, 2,3,4] </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Nested List</th>
+                      <td> lst_1=[1,2,3] <br> lst_2=[4,5,6] <br> <br> # Make a list of lists to form a matrix <br> matrix = [lst_1,lst_2]
+                        <br> Ex1: matrix[0] <br> Ex2: matrix[0][0]</td>
+                      <td> <br> <br> <br> <br> <br> Ex1: [1,2,3] <br> Ex2: 1 </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <em> ** Reverse and sort are permanent and will modify the original list value. </em>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid contentLowerPart">
+          <div class="row">
+            <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
+              <div class="container-fluid mx-auto" style="width: 400px;">
+                <button type="button" class="btn btn-primary btn-lg" style="width: 140px; margin-right: 10px;"><a href="python.html">Previous</a></button>
+                <button type="button" class="btn btn-primary btn-lg" style="width: 140px;"> <a href="python-lists.html">Next</a></button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <footer class="footer footer-padding">
+      <p>Made with ❤️ from the tech explained team.</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../../javascript/index.js" charset="utf-8"></script>
+
+</body>
+
+</html>
