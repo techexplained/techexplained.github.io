@@ -1,6 +1,15 @@
 body {
   font-family: Akzidenz, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300))); */
 }
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 1.5rem;
+  }
+}
+
 
 a:hover, a:active, a:focus {
   background-color: #007bff !important;
