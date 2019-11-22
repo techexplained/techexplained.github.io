@@ -42,6 +42,13 @@ function getResolution() {
     document.getElementById("sidebar-row").classList.add("sidebar-row-tablet");
     var totalHeight = $(".contentMiddlePart").height() + $(".contentTopPart").height();
     document.getElementById("sidebar-row").style.height = totalHeight +"px";
+    var rowHeight = $(".contentMiddlePart").height();
+    if ($(window).height() > rowHeight) {
+      document.getElementById("myFooter").style.position = "absolute";
+    }
+    else {
+      document.getElementById("myFooter").style.position = "relative";
+    }
   } else {
     document.getElementById("sidebar-row").classList.remove("sidebar-row-tablet");
   }
