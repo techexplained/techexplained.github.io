@@ -12,8 +12,8 @@ body {
 
 
 a:hover, a:active, a:focus {
-  background-color: #007bff !important;
-  color: #ffffff !important;
+   /* background-color: #007bff !important;  */
+  color: #ffffff; !important;
 }
 
 .text-indent {
@@ -49,11 +49,11 @@ a:hover, a:active, a:focus {
   color: #046cca;
 }
 
-.carousel-control-next,
-.navbar-toggler-icon .carousel-indicators,
+/* .carousel-control-next, */
+/* .navbar-toggler-icon .carousel-indicators,
 .carousel-control-prev {
   filter: invert(100%);
-}
+} */
 
 .educationCarousel {
   margin-bottom: 50px;
@@ -67,6 +67,10 @@ a:hover, a:active, a:focus {
 
 .carousel-control {
   color: #046cca;
+}
+
+.carousel-control:hover {
+  color: #ffffff;
 }
 
 .sidebar-menu-text {
@@ -84,6 +88,7 @@ a:hover, a:active, a:focus {
   width: 100%;
   overflow: scroll;
 }
+
 .sticky {
   position: fixed;
   top: 0;
@@ -106,6 +111,10 @@ a:hover, a:active, a:focus {
 .sidebar .nav-link.active {
   color: #ffffff;
   background-color: #007bff;
+}
+
+.sidebar-item a:hover{
+  color: red;
 }
 
 .contentPart {
