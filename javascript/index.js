@@ -43,11 +43,15 @@ function getResolution() {
     var totalHeight = $(".contentMiddlePart").height() + $(".contentTopPart").height();
     document.getElementById("sidebar-row").style.height = totalHeight +"px";
     var rowHeight = $(".contentMiddlePart").height();
+    console.log(rowHeight);
+    console.log($(window).height());
     if ($(window).height() > rowHeight) {
       document.getElementById("myFooter").style.position = "absolute";
+      console.log("here");
     }
     else {
       document.getElementById("myFooter").style.position = "relative";
+      console.log("here1");
     }
   } else {
     document.getElementById("sidebar-row").classList.remove("sidebar-row-tablet");
