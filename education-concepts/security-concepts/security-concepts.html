@@ -4,132 +4,215 @@
 <head>
   <meta charset="utf-8">
   <title>Tech Explained</title>
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="../../css/styles.css">
-
-  <nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" href="#">TECH EXPLAINED</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contactus.html">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
 </head>
 
 <body>
 
-  <div class="container-fluid sidebar-class">
-    <div class="row">
-      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-        <div class="sidebar-sticky">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
-                <span data-feather="home"></span>
-                GO Language <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file"></span>
-                Go Introduction
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="shopping-cart"></span>
-                Variables
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="shopping-cart"></span>
-                Arrays
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="shopping-cart"></span>
-                Functions
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="layers"></span>
-                Integrations
-              </a>
-            </li>
-          </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="../../index.html">TECH EXPLAINED</a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto navbar-topheader">
+          <li class="nav-item active">
+            <a class="nav-link text-dark" href="../../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="../../about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="../../contactus.html">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-          <!-- <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-            <span>Saved reports</span>
-            <a class="d-flex align-items-center text-muted" href="#">
-              <span data-feather="plus-circle"></span>
-            </a>
-          </h6>
-          <ul class="nav flex-column mb-2">
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Current month
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Last quarter
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Social engagement
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                <span data-feather="file-text"></span>
-                Year-end sale
-              </a>
-            </li>
-          </ul> -->
-        </div>
-      </nav>
+  <div class="row">
 
-      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-          <h1>GO language</h1>
-        </div>
-        <div class="container">
-          <p>sdjfklsd jklsdjfklsjdklfjsak ljsdklfjsldkjflajdflk jsalkdfjlskdj</p>
+    <div class="navbar navbar-expand-sm bg-light col-lg-2 col-md-6 col-sm-6 sidebar" id="sidebar-row">
+      <ul class="navbar-nav flex-column ml-xl-3 sidebar-ul" id="sidebar-row-ul">
+        <li class="nav-item">
+          <div class="sidebar-menu-text">
+            Menu
+            <button type="button" id="closeButton" class="close pull-right">
+              <span>&times;</span>
+            </button>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="security-concepts.html">Secure Shell (SSH)</a>
+        </li>
+      </ul>
+    </div>
 
+    <div class="col-lg-10 col-md-12 col-sm-12" id="contentBody">
+
+      <div class="container-fluid contentTopPart">
+        <div class="row" id="contentTopPart">
+          <div class="col-xl-12 border-bottom bg-light contentPart">
+            <button class="btn btn-primary" type="button"> Menu </button>
+          </div>
         </div>
-      </main>
+      </div>
+
+      <div class="container-fluid contentMiddlePart">
+        <div class="row">
+          <div class="col-xl-12">
+            <div id="numbers&floats" class="container-fluid contentPart">
+
+              <h2>Secure Shell (SSH)</h2>
+
+              <p>SSH2 is a significantly improved version of SSH1 in many respects. </p>
+              <ul>
+                <li>
+                  In terms of security, SSH2 comes with a number of stronger security features than SSH1, such as MAC-based integrity check, flexible session re-keying, fully-negotiable cryptographic algorithms, public-key certificates, etc.
+                </li>
+                <br>
+                <li>
+                  SSH2 is standardized by IETF, and as such its implementation is widely deployed and accepted in the industry. Due to SSH2's popularity and cryptographic superiority over SSH1, many products are dropping support for SSH1.
+                </li>
+              </ul>
+
+
+              <p> The server component listens on a designated port for connections. It is responsible for negotiating the secure connection, authenticating the connecting party, and spawning the correct environment if the credentials are accepted.
+              </p>
+
+              <p>The client is responsible for beginning the initial TCP handshake with the server, negotiating the secure connection, verifying that the server's identity matches previously recorded information, and providing credentials to
+                authenticate. </p>
+
+              <h3> Diffie-Hellman algorithm </h3>
+
+              <p> The basic idea works like this: </p>
+              <ul>
+                <li>
+                  I come up with two prime numbers g and p and tell you what they are.
+                </li>
+                <br>
+                <li>
+                  You then pick a secret number (a), but you don't tell anyone. Instead you compute ga mod p and send that result back to me. (We'll call that A since it came from a).
+                </li>
+                <br>
+                <li>
+                  I do the same thing, but we'll call my secret number b and the computed number B. So I compute gb mod p and send you the result (called "B")
+                </li>
+                <br>
+                <li>
+                  Now, you take the number I sent you and do the exact same operation with it. So that's Ba modp.
+                </li>
+                <br>
+                <li>
+                  I do the same operation with the result you sent me, so: Ab mod p.
+                </li>
+              </ul>
+
+              <p> The shared secret is then used to encrypt all communication that follows. </p>
+
+              <ol>
+                <li>
+                  When a TCP connection is made by a client, the server responds with the protocol versions it supports. If the client can match one of the acceptable protocol versions, the connection continues.
+                </li>
+                <br>
+                <li>
+                  The server also provides its public host key, which the client can use to check whether this was the intended host. When you do ssh to a machine for the 1st time (or whenever there is a key change in the remote machine), you will be
+                  prompted to say 'yes' for authenticity of host. This feature is controlled using StrictHostKeyChecking ssh parameter.
+                </li>
+                <br>
+                <li>
+                  At this point, both parties negotiate a session key using a version of something called the Diffie-Hellman algorithm. <br>
+                </li>
+                <li> The next stage involves authenticating the user and deciding access.
+                  <ul>
+                    <li>
+                      The simplest is probably password authentication, in which the server simply prompts the client for the password of the account they are attempting to login with.
+                    </li>
+                    <br>
+                    <li>
+                      Authentication using SSH key pairs begins after the symmetric encryption has been established as described in the last section. The procedure happens like this:
+                    </li>
+                    <br>
+                    <ul>
+                      <li>
+                        The client begins by sending an ID for the key pair it would like to authenticate with to the server.
+                      </li>
+                      <br>
+                      <li>
+                        The server check's the authorized_keys file of the account that the client is attempting to log into for the key ID.
+                      </li>
+                      <br>
+                      <li>
+                        If a public key with matching ID is found in the file, the server generates a random number and uses the public key to encrypt the number.
+                      </li>
+                      <br>
+                      <li>
+                        The server sends the client this encrypted message.
+                      </li>
+                      <br>
+                      <li>
+                        If the client actually has the associated private key, it will be able to decrypt the message using that key, revealing the original number.
+                      </li>
+                      <br>
+                      <li>
+                        The client combines the decrypted number with the shared session key that is being used to encrypt the communication, and calculates the MD5 hash of this value.
+                      </li>
+                      <br>
+                      <li>
+                        The client then sends this MD5 hash back to the server as an answer to the encrypted number message.
+                      </li>
+                      <br>
+                      <li>
+                        The server uses the same shared session key and the original number that it sent to the client to calculate the MD5 value on its own. It compares its own calculation to the one that the client sent back. If these two values
+                        match, it proves that the client was in possession of the private key and the client is authenticated.
+                      </li>
+                      <br>
+                    </ul>
+                  </ul>
+                </li>
+              </ol>
+              <h2>SSH Hardening </h2>
+              <ol>
+                <li>Use SSH protocol 2 </li>
+                <li>Disable root login</li>
+                <li>Disconnect Idle sessions</li>
+                <li>Whitelist users</li>
+                <li>Change default port</li>
+                <li>Disable password based authentication</li>
+                <li>Two factor authentication</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid contentLowerPart">
+        <div class="row">
+          <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
+            <div class="container-fluid mx-auto" style="width: 400px;">
+              <a href="python.html" class="btn btn-primary disabled" style="width: 140px; margin-right: 10px;">Previous</a>
+              <a href="python-strings.html" class="btn btn-primary" style="width: 140px;">Next</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
-  <div class="footer footer-padding">
-    <footer>
-      <p>Made with ❤️ from the tech explained team.</p>
-    </footer>
-  </div>
+
+  <footer class="footer footer-padding" id="myFooter">
+    <p>Made with ❤️ from the tech explained team.</p>
+  </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="../../javascript/index.js" charset="utf-8"></script>
+
 </body>
 
 </html>
