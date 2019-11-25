@@ -38,7 +38,7 @@ window.onscroll = function() {
 
 function getResolution() {
   // console.log(window.innerWidth);
-  if (window.innerWidth < 800) {
+  if (window.innerWidth < 1200) {
     document.getElementById("sidebar-row").classList.add("sidebar-row-tablet");
     var totalHeight = $(".contentMiddlePart").height() + $(".contentTopPart").height();
     document.getElementById("sidebar-row").style.height = totalHeight +"px";
