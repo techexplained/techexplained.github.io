@@ -10,10 +10,9 @@ body {
   }
 }
 
-
 a:hover, a:active, a:focus {
-   /* background-color: #007bff !important;  */
-  color: #ffffff; !important;
+   /* background-color: #007bff !important; */
+  color: #ffffff !important;
 }
 
 .text-indent {
