@@ -95,7 +95,7 @@
             <div class="container-fluid contentPart">
 
               <h2>If, elif, else Statements</h2> <br>
-              <p> if Statements in Python allows us to tell the computer to perform alternative actions based on a certain set of results.</p>
+              <p> If Statements in Python allows us to tell the computer to perform alternative actions based on a certain set of results.</p>
 
               <div class="container-fluid contentPart">
 
@@ -125,9 +125,10 @@
   <span style="color: #008000"># Output</span>
   I will be printed <span style="color: #0000ff">in</span> any case where x <span style="color: #0000ff">is</span> <span style="color: #0000ff">not</span> true
   </pre>
-                </div>
+                </div> <br>
 
                 <h3>If elseif, else code sample</h3> <br>
+
                 <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
                   <pre style="margin: 0; line-height: 125%">day = <span style="color: #a31515">&#39;Saturday&#39;</span>
 
@@ -139,87 +140,92 @@
     <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;It&#39;s a weekday!&quot;</span>)
 </pre>
                 </div>
-
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="container-fluid contentMiddlePart">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="container-fluid contentPart">
+      <div class="container-fluid contentPart">
+        <div class="row">
+          <div class="col-xl-12">
 
-                  <h2>Sets</h2>
-                  <p> Sets are an unordered collection of unique elements. We can construct them by using the set() function. </p>
-                  <p>As shown in the following example, we are going to:</p>
-                  <ol>
-                    <li> Initialize a set</li>
-                    <li> Add a value to set </li>
-                    <li> Show the current value of set</li>
-                    <li> Add the same value to set </li>
-                    <li> Show the current value of set </li>
-                  </ol>
-
-
-
-                  <br> <br>
-                  <em> Notice how it won't place another 4 there. That's because a set is only concerned with unique elements! </em>
-
-                  <div class="container-fluid contentPart">
-
-                    <div class="container-fluid contentPart">
-                      <h2>Set Methods</h2> <br>
-
-                      <table class="table table-hover" style="text-align: left;">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Method</th>
-                            <th scope="col">Example</th>
-                            <th scope="col">Output</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <th scope="row"> Copy set</th>
-                            <td> my_set = {1,2,3} <br> <br> my_set_copy = my_set.copy() <br>my_set_copy </td>
-                            <td> {1,2,3}</td>
-                          </tr>
-                          <tr>
-                            <th scope="row"> Difference set</th>
-                            <td> my_set = {1,2,3} <br> my_set_diff = {1,2,3,4} <br> <br> my_set_diff.difference(my_set) </td>
-                            <td> {4}</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="container-fluid contentLowerPart">
-                <div class="row">
-                  <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
-                    <div class="container-fluid mx-auto" style="width: 400px;">
-                      <a href="python-dictionary.html" class="btn btn-primary" style="width: 140px; margin-right: 10px;">Previous</a>
-                      <a href="python-statements.html" class="btn btn-primary" style="width: 140px;">Next</a></div>
-                  </div>
-                </div>
-              </div>
-
+            <div class="container-fluid contentPart">
+              <h2>For Loops</h2> <br>
+              <p> A for loop acts as an iterator in Python; it goes through items that are in a sequence or any other iterable item. Objects that we've learned about that we can iterate over include strings, lists, tuples, and even built-in iterables
+                for dictionaries, such as keys or values.</p>
             </div>
+
+            <div class="container-fluid contentPart">
+              <h3> For loop syntax format</h3> <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">for</span> item <span style="color: #0000ff">in</span> object:
+    statements to do stuff
+</pre>
+              </div>
+            </div>
+
+            <div class="container-fluid contentPart">
+              <h3> For loop examples</h3> <br>
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%">list1 = [1,2,3]
+
+<span style="color: #0000ff">for</span> num <span style="color: #0000ff">in</span> list1:
+    <span style="color: #0000ff">print</span>(num)
+
+<span style="color: #0000ff">for</span> letter <span style="color: #0000ff">in</span> <span style="color: #a31515">&#39;Hello&#39;</span>:
+    <span style="color: #0000ff">print</span>(letter)
+</pre>
+              </div>
+            </div>
+
+            <div class="container-fluid contentPart">
+              <h3> For loop example 2</h3> <br>
+              <!-- HTML generated using hilite.me -->
+              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                <pre style="margin: 0; line-height: 125%"><span style="color: #008000">#List Unpacking</span>
+list2 = [(2,4),(6,8),(10,12)]
+
+<span style="color: #0000ff">for</span> (t1,t2) <span style="color: #0000ff">in</span> list2:
+    <span style="color: #0000ff">print</span>(t1)
+
+<span style="color: #008000">#For loop Unpacking</span>
+d = {<span style="color: #a31515">&#39;k1&#39;</span>:1,<span style="color: #a31515">&#39;k2&#39;</span>:2,<span style="color: #a31515">&#39;k3&#39;</span>:3}
+<span style="color: #0000ff">for</span> k,v <span style="color: #0000ff">in</span> d.items():
+    <span style="color: #0000ff">print</span>(k)
+    <span style="color: #0000ff">print</span>(v)
+</pre>
+              </div>
+              <br>
+            </div>
+
           </div>
+        </div>
+      </div>
 
-          <footer class="footer footer-padding" id="myFooter">
-            <p>Made with ❤️ from the tech explained team.</p>
-          </footer>
+      <div class="container-fluid contentLowerPart">
+        <div class="row">
+          <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
+            <div class="container-fluid mx-auto" style="width: 400px;">
+              <a href="python-dictionary.html" class="btn btn-primary" style="width: 140px; margin-right: 10px;">Previous</a>
+              <a href="python-statements.html" class="btn btn-primary" style="width: 140px;">Next</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-          <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-          <script src="../../javascript/index.js" charset="utf-8"></script>
+  <footer class="footer footer-padding" id="myFooter">
+    <p>Made with ❤️ from the tech explained team.</p>
+  </footer>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="../../javascript/index.js" charset="utf-8"></script>
+  </div>
 </body>
 
 </html>
