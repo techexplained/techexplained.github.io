@@ -97,134 +97,109 @@
           <div class="col-xl-12">
             <div class="container-fluid contentPart">
 
-              <h2>Tuples</h2>
-              <p> In Python tuples are very similar to lists, however, unlike lists they are immutable meaning they can not be changed. You would use tuples to present things that shouldn't be changed, such as days of the week, or dates on a
-                calendar.</p>
+              <h2>Errors and Exception Handling </h2> <br>
+              <p> The basic terminology and syntax used to handle errors in Python are the try and except statements. The code which can cause an exception to occur is put in the try block and the handling of the exception is then implemented in the
+                except block of code.</p>
+              <p> The finally: block of code will always be run regardless if there was an exception in the try code block. </p>
 
               <div class="container-fluid contentPart">
-                <h2>Tuple basics</h2> <br>
 
-                <table class="table table-hover" style="text-align: left;">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">Basics</th>
-                      <th scope="col">Code</th>
-                      <th scope="col">Output</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <th scope="row">Creating Tuple</th>
-                      <td> my_tuple = (1,2,3) </td>
-                      <td> </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Tuple Length</th>
-                      <td> my_tuple = (1,2,3) <br> len(my_tuple) </td>
-                      <td> 3 </td>
-                    </tr>
-                    <tr>
-                      <th scope="row"> Accessing a value </th>
-                      <td> my_tuple = (1,2,3) <br> <br> Ex1: my_tuple[0] <br> Ex2: my_tuple[-1]
-                      <td> <br> <br> Ex1: 1 <br> Ex2: 3 </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <h3> Try except syntax format</h3> <br>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">try</span>:
+    You do your operations here...
+    ...
+<span style="color: #0000ff">except</span> ExceptionI:
+    If there <span style="color: #0000ff">is</span> ExceptionI, then execute this block.
+     ...
+<span style="color: #0000ff">else</span>:
+    If there <span style="color: #0000ff">is</span> no exception then execute this block. <br>
+<span style="color: #0000ff">finally</span>:
+    This code block would always be executed.
+    </pre>
+                </div>
               </div>
 
-              <div class="container-fluid contentPart">
-                <h2>Tuple Methods</h2> <br>
+              <p> We could have also just said except: if we weren't sure what exception would occur. For example: </p>
 
-                <table class="table table-hover" style="text-align: left;">
-                  <thead class="thead-dark">
-                    <tr>
-                      <th scope="col">Example</th>
-                      <th scope="col">Method</th>
-                      <th scope="col">Output</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr valign="middle">
-                      <th scope="row" style="vertical-align : middle;" rowspan="3">my_tuple = (1,2,3)</th>
-                    </tr>
-                    <tr>
-                      <td> # Use .index to enter a value and return the index <br> <br> my_tuple.index(1) </td>
-                      <td> 1 </td>
-                    </tr>
-                    <tr>
-                      <td> # Use .count to count the number of times a value appears <br> <br> my_tuple.count(1) </td>
-                      <td> 1 </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="container-fluid contentPart">
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">try</span>:
+      f = open(<span style="color: #a31515">&#39;testfile&#39;</span>,<span style="color: #a31515">&#39;r&#39;</span>)
+      f.write(<span style="color: #a31515">&#39;Test write this&#39;</span>)
+  <span style="color: #0000ff">except</span>:
+      <span style="color: #008000"># This will check for any exception and then execute this print statement</span>
+      <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;Error: Could not find file or read data&quot;</span>)
+  <span style="color: #0000ff">else</span>:
+      <span style="color: #0000ff">print</span>(<span style="color: #a31515">&quot;Content written successfully&quot;</span>)
+      f.close()
+  </pre>
+                </div>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="container-fluid contentPart">
-            <div class="row">
-              <div class="col-xl-12">
-                <div class="container-fluid contentPart">
 
-                  <h2>Sets</h2>
-                  <p> Sets are an unordered collection of unique elements. We can construct them by using the set() function. </p>
-                  <p>As shown in the following example, we are going to:</p>
-                  <ol>
-                    <li> Initialize a set</li>
-                    <li> Add a value to set </li>
-                    <li> Show the current value of set</li>
-                    <li> Add the same value to set </li>
-                    <li> Show the current value of set </li>
-                  </ol>
+        <div class="container-fluid contentPart">
+          <div class="row">
+            <div class="col-xl-12">
 
-                  <img class="img-fluid" src="images/set_assignment.png" alt="variable_assignment">
+              <h2>Unittest</h2> <br>
+              <p> Unittest lets you write your own test programs. The goal is to send a specific set of data to your program, and analyze the returned results against an expected result.</p>
 
-                  <br> <br>
-                  <em> Notice how it won't place another 4 there. That's because a set is only concerned with unique elements! </em>
+              <div class="container-fluid contentPart">
+                <p> Let's generate a simple script that capitalizes words in a given string. We'll call it cap.py </p>
 
-                  <div class="container-fluid contentPart">
-                    <h2>Set Methods</h2> <br>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #008000">#cap.py</span>
 
-                    <table class="table table-hover" style="text-align: left;">
-                      <thead class="thead-dark">
-                        <tr>
-                          <th scope="col">Method</th>
-                          <th scope="col">Example</th>
-                          <th scope="col">Output</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <th scope="row"> Copy set</th>
-                          <td> my_set = {1,2,3} <br> <br> my_set_copy = my_set.copy() <br>my_set_copy </td>
-                          <td> {1,2,3}</td>
-                        </tr>
-                        <tr>
-                          <th scope="row"> Difference set</th>
-                          <td> my_set = {1,2,3} <br> my_set_diff = {1,2,3,4} <br> <br> my_set_diff.difference(my_set) </td>
-                          <td> {4}</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+<span style="color: #0000ff">def</span> cap_text(text):
+    <span style="color: #0000ff">return</span> text.capitalize()
+</pre>
+                </div>
+                <br>
+                <p> Here we'll test simple, one-word strings, followed by a test of multiple word strings. </p>
+
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #008000">#test_cap.py</span>
+<span style="color: #0000ff">import</span> unittest
+<span style="color: #0000ff">import</span> cap
+
+<span style="color: #0000ff">class</span> <span style="color: #2b91af">TestCap</span>(unittest.TestCase):
+
+    <span style="color: #0000ff">def</span> test_one_word(self):
+        text = <span style="color: #a31515">&#39;python&#39;</span>
+        result = cap.cap_text(text)
+        self.assertEqual(result, <span style="color: #a31515">&#39;Python&#39;</span>)
+
+    <span style="color: #0000ff">def</span> test_multiple_words(self):
+        text = <span style="color: #a31515">&#39;monty python&#39;</span>
+        result = cap.cap_text(text)
+        self.assertEqual(result, <span style="color: #a31515">&#39;Monty Python&#39;</span>)
+
+<span style="color: #0000ff">if</span> __name__ == <span style="color: #a31515">&#39;__main__&#39;</span>:
+    unittest.main()
+</pre>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       <div class="container-fluid contentLowerPart">
         <div class="row">
           <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
             <div class="container-fluid mx-auto" style="width: 400px;">
-              <a href="python-dictionary.html" class="btn btn-primary" style="width: 140px; margin-right: 10px;">Previous</a>
+              <a href="python-statements.html" class="btn btn-primary" style="width: 140px; margin-right: 10px;">Previous</a>
               <a href="python-statements.html" class="btn btn-primary" style="width: 140px;">Next</a></div>
           </div>
         </div>
       </div>
-
     </div>
   </div>
+
 
   <footer class="footer footer-padding" id="myFooter">
     <p>Made with ❤️ from the tech explained team.</p>
@@ -235,7 +210,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
   <script src="../../javascript/index.js" charset="utf-8"></script>
-
+  </div>
 </body>
 
 </html>

@@ -73,6 +73,12 @@
         <li class="nav-item">
           <a class="nav-link menuitem-nav-link" href="python-tuples.html">Python Tuples & Sets</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-statements.html">Python Statements</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-errorhandling.html">Python Error Handling & Unit Testing</a>
+        </li>
       </ul>
     </div>
 
@@ -169,36 +175,150 @@
                 </tbody>
               </table>
             </div>
+
+            <div id="string-functions" class="container-fluid contentPart">
+              <h2>String Formatting</h2> <br>
+              <p> String formatting lets you inject items into a string rather than trying to chain items together using commas or string concatenation. </p>
+              <p>Common string formatting operators are: </p>
+
+              <ul>
+                <li> The %s operator converts whatever it sees into a string, including integers and floats. </li>
+                <li> The %d operator converts numbers to integers first, without rounding. </li>
+                <li> The %f operator prints numbers with decimals.
+                  <ul>
+                    <li> Floating point numbers use the format %5.2f. </li>
+                    <li> Here, 5 would be the minimum number of characters the string should contain; these may be padded with whitespace if the entire number does not have this many digits.</li>
+                    <li> Next to this, .2f stands for how many numbers to show past the decimal point </li>
+                  </ul>
+                </li>
+                <li> The %r operator deliver the string representation of the object, including quotation marks and any escape characters. </li>
+              </ul>
+              <br>
+
+              <table class="table table-hover " style="text-align: left;">
+                <thead class="thead-dark">
+                  <tr>
+                    <th scope="col">String Example</th>
+                    <th scope="col">Code</th>
+                    <th scope="col">Output</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Single Value</th>
+                    <td> print("I'm going to inject %s here." %'something') </td>
+                    <td> I'm going to inject something here.</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Multiple Value</th>
+                    <td> print("I'm going to inject %s text here, and %s text here." %('some','more')) </td>
+                    <td> I'm going to inject some text here, and more text here. </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Multiple passed through a variable</th>
+                    <td> x, y = 'some', 'more' <br> print("I'm going to inject %s text here, and %s text here."%(x,y)) </td>
+                    <td> I'm going to inject some text here, and more text here. </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Floating point numbers </th>
+                    <td> print('Floating point numbers: %5.2f' %(13.144)) </td>
+                    <td> Floating point numbers: 13.14</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <br>
+              <div id="Strings" class="container-fluid contentPart">
+
+                <h2> Formatting with the .format() method</h2>
+
+                <p> A better way to format objects into your strings for print statements is with the string .format() method. The syntax is: </p>
+
+                <code> &emsp; &emsp; &emsp; string here {} then also {}'.format('something1','something2') </code>
+                <br>
+                <br>
+
+                <p> Some of the examples of this formatting type:</p>
+
+                <table class="table table-hover " style="text-align: left;">
+                  <thead class="thead-dark">
+                    <tr>
+                      <th scope="col">Code</th>
+                      <th scope="col">Output</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td> print('This is a string with an {}'.format('insert')) </td>
+                      <td> This is a string with an insert</td>
+                    </tr>
+                    <tr>
+                      <td> print('The {2} {1} {0}'.format('fox','brown','quick')) </td>
+                      <td> The quick brown fox </td>
+                    </tr>
+                    <tr>
+                      <td> print('First Object: {a}, Second Object: {b}, Third Object: {c}'.format(a=1,b='Two',c=12.3)) </td>
+                      <td> First Object: 1, Second Object: Two, Third Object: 12.3 </td>
+                    </tr>
+                  </tbody>
+                </table>
+
+                <p> By default, .format() aligns text to the left, numbers to the right. You can pass an optional <,^, or> to set a left, center or right alignment: </p>
+
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39;{0:&lt;8} | {1:^8} | {2:&gt;8}&#39;</span>.format(<span style="color: #a31515">&#39;Left&#39;</span>,<span style="color: #a31515">&#39;Center&#39;</span>,<span style="color: #a31515">&#39;Right&#39;</span>))
+<span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39;{0:&lt;8} | {1:^8} | {2:&gt;8}&#39;</span>.format(11,22,33))
+
+<span style="color: #008000">#### You can precede the aligment operator with a padding character ####</span>
+
+<span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39;{0:=&lt;8} | {1:-^8} | {2:.&gt;8}&#39;</span>.format(<span style="color: #a31515">&#39;Left&#39;</span>,<span style="color: #a31515">&#39;Center&#39;</span>,<span style="color: #a31515">&#39;Right&#39;</span>))
+<span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39;{0:=&lt;8} | {1:-^8} | {2:.&gt;8}&#39;</span>.format(11,22,33))
+</pre>
+                </div>
+
+                <div id="Strings" class="container-fluid contentPart">
+
+                  <h2> Formatted String Literals (f-strings) </h2>
+
+                  <p> Introduced in Python 3.6, f-strings offer several benefits over the older .format() string method described above. For one, you can bring outside variables immediately into the string </p>
+
+                  <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                    <pre style="margin: 0; line-height: 125%">name = <span style="color: #a31515">&#39;Fred&#39;</span>
+<span style="color: #0000ff">print</span>(f<span style="color: #a31515">&quot;He said his name is {name}.&quot;</span>)
+</pre>
+                  </div>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="container-fluid contentLowerPart">
-        <div class="row">
-          <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
-            <div class="container-fluid mx-auto" style="width: 400px; ">
+        <div class="container-fluid contentLowerPart">
+          <div class="row">
+            <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
+              <div class="container-fluid mx-auto" style="width: 400px; ">
 
-              <a href="python.html" class="btn btn-primary" style="width: 140px; margin-right: 10px; display: inline-block;">Previous</a>
-              <a href="python-lists.html" class="btn btn-primary" style="width: 140px;display: inline-block; ">Next</a>
+                <a href="python.html" class="btn btn-primary" style="width: 140px; margin-right: 10px; display: inline-block;">Previous</a>
+                <a href="python-lists.html" class="btn btn-primary" style="width: 140px;display: inline-block; ">Next</a>
 
+              </div>
             </div>
           </div>
         </div>
       </div>
-
     </div>
-  </div>
 
-  <footer class="footer footer-padding" id="myFooter">
-    <p>Made with ❤️ from the tech explained team.</p>
-  </footer>
+    <footer class="footer footer-padding" id="myFooter">
+      <p>Made with ❤️ from the tech explained team.</p>
+    </footer>
 
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-  <script src="../../javascript/index.js" charset="utf-8"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="../../javascript/index.js" charset="utf-8"></script>
 
 </body>
 

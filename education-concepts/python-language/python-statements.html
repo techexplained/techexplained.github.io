@@ -76,6 +76,9 @@
         <li class="nav-item">
           <a class="nav-link menuitem-nav-link" href="python-statements.html">Python Statements</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link menuitem-nav-link" href="python-errorhandling.html">Python Error Handling & Unit Testing</a>
+        </li>
       </ul>
     </div>
 
@@ -151,24 +154,24 @@
           <div class="col-xl-12">
 
             <div class="container-fluid contentPart">
-              <h2>For Loops</h2> <br>
+              <h2>For Loops</h2>
               <p> A for loop acts as an iterator in Python; it goes through items that are in a sequence or any other iterable item. Objects that we've learned about that we can iterate over include strings, lists, tuples, and even built-in iterables
                 for dictionaries, such as keys or values.</p>
-            </div>
 
-            <div class="container-fluid contentPart">
-              <h3> For loop syntax format</h3> <br>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">for</span> item <span style="color: #0000ff">in</span> object:
+
+              <div class="container-fluid contentPart">
+                <h3> For loop syntax format</h3> <br>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">for</span> item <span style="color: #0000ff">in</span> object:
     statements to do stuff
 </pre>
+                </div>
               </div>
-            </div>
 
-            <div class="container-fluid contentPart">
-              <h3> For loop examples</h3> <br>
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%">list1 = [1,2,3]
+              <div class="container-fluid contentPart">
+                <h3> For loop code</h3> <br>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">list1 = [1,2,3]
 
 <span style="color: #0000ff">for</span> num <span style="color: #0000ff">in</span> list1:
     <span style="color: #0000ff">print</span>(num)
@@ -176,14 +179,13 @@
 <span style="color: #0000ff">for</span> letter <span style="color: #0000ff">in</span> <span style="color: #a31515">&#39;Hello&#39;</span>:
     <span style="color: #0000ff">print</span>(letter)
 </pre>
+                </div>
               </div>
-            </div>
 
-            <div class="container-fluid contentPart">
-              <h3> For loop example 2</h3> <br>
-              <!-- HTML generated using hilite.me -->
-              <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-                <pre style="margin: 0; line-height: 125%"><span style="color: #008000">#List Unpacking</span>
+              <div class="container-fluid contentPart">
+                <h3> For loop unpacking code</h3> <br>
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #008000">#List Unpacking</span>
 list2 = [(2,4),(6,8),(10,12)]
 
 <span style="color: #0000ff">for</span> (t1,t2) <span style="color: #0000ff">in</span> list2:
@@ -195,20 +197,80 @@ d = {<span style="color: #a31515">&#39;k1&#39;</span>:1,<span style="color: #a31
     <span style="color: #0000ff">print</span>(k)
     <span style="color: #0000ff">print</span>(v)
 </pre>
+                </div>
               </div>
-              <br>
             </div>
-
           </div>
         </div>
       </div>
+
+      <div class="container-fluid contentPart">
+        <div class="row">
+          <div class="col-xl-12">
+
+            <div class="container-fluid contentPart">
+              <h2>While Loops</h2> <br>
+              <p> The while statement in Python is one of most general ways to perform iteration. A while statement will repeatedly execute a single statement or group of statements as long as the condition is true.</p>
+
+              <div class="container-fluid contentPart">
+                <h3> While loop syntax format</h3> <br>
+
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%"><span style="color: #0000ff">while</span> test:
+    code statements
+<span style="color: #0000ff">else</span>:
+    final code statements
+</pre>
+                </div>
+              </div>
+
+              <div class="container-fluid contentPart">
+                <h3> While loop code</h3> <br>
+
+                <div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+                  <pre style="margin: 0; line-height: 125%">x = 0
+
+<span style="color: #0000ff">while</span> x &lt; 10:
+    <span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39;x is currently: &#39;</span>,x)
+    <span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39; x is still less than 10, adding 1 to x&#39;</span>)
+    x+=1
+
+<span style="color: #0000ff">else</span>:
+    <span style="color: #0000ff">print</span>(<span style="color: #a31515">&#39;All Done!&#39;</span>)
+</pre>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid contentPart">
+        <div class="row">
+          <div class="col-xl-12">
+
+            <div class="container-fluid contentPart">
+              <h2>Break, continue, pass</h2> <br>
+              <p> We can use break, continue, and pass statements in our loops to add additional functionality for various cases. The three statements are defined by:</p>
+
+              <ol>
+                <li> break: Breaks out of the current closest enclosing loop.</li>
+                <li> continue: Goes to the top of the closest enclosing loop.</li>
+                <li> pass: Does nothing at all.</li>
+              </ol>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
 
       <div class="container-fluid contentLowerPart">
         <div class="row">
           <div class="col-xl-12 pt-3 pb-2 mb-3 border-top">
             <div class="container-fluid mx-auto" style="width: 400px;">
-              <a href="python-dictionary.html" class="btn btn-primary" style="width: 140px; margin-right: 10px;">Previous</a>
-              <a href="python-statements.html" class="btn btn-primary" style="width: 140px;">Next</a></div>
+              <a href="python-tuples.html" class="btn btn-primary" style="width: 140px; margin-right: 10px;">Previous</a>
+              <a href="python-errorhandling.html" class="btn btn-primary" style="width: 140px;">Next</a></div>
           </div>
         </div>
       </div>
